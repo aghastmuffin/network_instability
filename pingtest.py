@@ -1,3 +1,4 @@
+#ping /n 1 google.com
 try:
     import subprocess
     from win10toast import ToastNotifier
@@ -24,7 +25,7 @@ def notification(top, content, duration):
                    icon_path=None, duration=duration)
 while True:
     try:
-        print(subprocess.check_output(['ping', 'google.com']))
+        print(subprocess.check_output(['ping', '/n 1', 'google.com']))
         varforuse = (varforuse + 1)
         if varforuse == (10000):
             varforuse = (0)
