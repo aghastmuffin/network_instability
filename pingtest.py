@@ -17,6 +17,9 @@ except:
             import os 
             os.system('pip install subprocess')
             os.system('pip insatll win10toast')
+        elif yn == ("N"):
+            print('ok please install those programs yourself, otherwise this program will not work. (win10toast and subprocess) now exiting program')
+            exit()
 var = int(0)
 varforuse = int(0)
 def notification(top, content, duration):
